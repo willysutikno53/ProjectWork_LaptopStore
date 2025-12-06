@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPTOP STORE - Premium Laptops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-icon">💻</div>
+                <span class="logo-text">LAPTOP STORE</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login" id="btnLogin">Sign in</button>
+                <button class="btn-join" id="btnRegister">Register</button>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">LAPTOP</h1>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Cari laptop impian Anda..." class="search-input" id="searchInput">
+                    <button class="search-btn" id="searchBtn">
+                        <span>🔍</span>
+                    </button>
+                </div>
+
+                <div class="popular-skills">
+                    <span class="skills-label">Kategori populer:</span>
+                    <button class="skill-tag" data-category="gaming">Gaming</button>
+                    <button class="skill-tag" data-category="bisnis">Bisnis</button>
+                    <button class="skill-tag" data-category="ultrabook">Ultrabook</button>
+                    <button class="skill-tag" data-category="multimedia">Multimedia</button>
+                </div>
+
+                <p class="hero-description">
+                    Temukan laptop terbaik untuk kebutuhan Anda. Dari gaming powerhouse 
+                    hingga ultrabook premium, kami menyediakan berbagai pilihan laptop berkualitas tinggi.
+                </p>
+
+                <div class="trust-badge">
+                    <div class="trusted-header">Dipercaya Pelanggan</div>
+                    <div class="trust-content">
+                        <div class="avatars">
+                            <img src="https://i.pravatar.cc/40?img=1" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=2" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=3" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=4" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=5" alt="User">
+                            <img src="https://i.pravatar.cc/40?img=6" alt="User">
+                        </div>
+                        <div class="trust-info">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="trust-text">
+                                <strong>5000+</strong><br>
+                                <span>Pelanggan Puas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" alt="Laptop" class="profile-img">
+                    <div class="profile-info">
+                        <div class="profile-name">Best Seller 2024</div>
+                        <div class="profile-role">ASUS ROG Zephyrus G14</div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-icon">⚡</span>
+                                <span>AMD Ryzen 9 - RTX 4060</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-icon">💰</span>
+                                <span>Rp 25.999.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="services" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>PRODUK POPULER</h2>
+                <p>Koleksi laptop terbaik dari berbagai brand ternama dengan spesifikasi unggulan untuk berbagai kebutuhan Anda.</p>
+            </div>
+
+            <!-- Filter Options -->
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+                <button class="filter-btn" data-filter="bisnis">Bisnis</button>
+                <button class="filter-btn" data-filter="creator">Creator</button>
+                <button class="filter-btn" data-filter="ultrabook">Ultrabook</button>
+            </div>
+
+            <div class="services-slider">
+                <button class="slider-btn prev" id="prevBtn">←</button>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Product cards will be inserted here by JavaScript -->
+                </div>
+                <button class="slider-btn next" id="nextBtn">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="about">
+        <div class="container">
+            <div class="why-content">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600" alt="Laptop Setup" class="why-image">
+            </div>
+            <div class="why-text">
+                <h2>KENAPA PILIH KAMI?</h2>
+                <p class="subtitle">Kami menawarkan produk original, layanan terbaik, dan komitmen kepada kepuasan pelanggan.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div class="feature-content">
+                            <h3>GARANSI RESMI</h3>
+                            <p>Semua laptop dilengkapi dengan garansi resmi dari distributor Indonesia, memberikan ketenangan pikiran untuk pembelian Anda.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🚚</div>
+                        <div class="feature-content">
+                            <h3>FREE ONGKIR</h3>
+                            <p>Nikmati pengiriman gratis ke seluruh Indonesia untuk pembelian di atas Rp 5 juta dengan packing aman dan asuransi.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💳</div>
+                        <div class="feature-content">
+                            <h3>CICILAN 0%</h3>
+                            <p>Dapatkan kemudahan pembayaran dengan cicilan 0% hingga 12 bulan menggunakan kartu kredit pilihan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>APA KATA PELANGGAN</h2>
+            <div class="testimonial-slider">
+                <button class="slider-btn prev" id="prevTestimonial">←</button>
+                <div class="testimonial-card" id="testimonialCard">
+                    <p class="testimonial-text">
+                        "Laptop gaming yang saya beli sangat memuaskan! Performa luar biasa, harga kompetitif, 
+                        dan pelayanan yang ramah. Sangat recommend untuk yang mencari laptop berkualitas."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/50?img=7" alt="Budi Santoso">
+                        <div>
+                            <strong>Budi Santoso</strong>
+                            <div>Content Creator</div>
+                        </div>
+                    </div>
+                    <div class="company-logo">⭐⭐⭐⭐⭐</div>
+                </div>
+                <button class="slider-btn next" id="nextTestimonial">→</button>
+            </div>
+
+            <div class="freelancers-grid">
+                <div class="freelancer-avatars">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1602080858428-57174f9431cf?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=300" alt="Laptop">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300" alt="Laptop">
+                </div>
+                <div class="cta-box">
+                    <h3>KOLEKSI LENGKAP</h3>
+                    <p>Dengan lebih dari 500+ model laptop dari berbagai brand ternama, kami siap membantu menemukan laptop yang sempurna untuk Anda.</p>
+                    <button class="btn-cta" id="btnViewAll">Lihat Semua</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>HUBUNGI KAMI</h2>
+                <p>Punya pertanyaan? Tim kami siap membantu Anda menemukan laptop yang sempurna.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Teknologi No. 123<br>Jakarta Selatan, 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>+62 21 1234 5678<br>WhatsApp: +62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@laptopstore.com<br>support@laptopstore.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Sabtu: 09:00 - 21:00<br>Minggu: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Nomor Telepon" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">💻</div>
+                        <span>LAPTOP STORE</span>
+                    </div>
+                    <p>Toko laptop terpercaya dengan produk original dan layanan terbaik sejak 2015.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">ig</a>
+                        <a href="#" class="social-icon">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>PRODUK</h4>
+                    <ul>
+                        <li><a href="#products">Laptop Gaming</a></li>
+                        <li><a href="#products">Laptop Bisnis</a></li>
+                        <li><a href="#products">Ultrabook</a></li>
+                        <li><a href="#products">Workstation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LAYANAN</h4>
+                    <ul>
+                        <li><a href="#about">Garansi</a></li>
+                        <li><a href="#contact">Service Center</a></li>
+                        <li><a href="#products">Trade-in</a></li>
+                        <li><a href="#products">Custom Build</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>BANTUAN</h4>
+                    <ul>
+                        <li><a href="#contact">FAQ</a></li>
+                        <li><a href="#about">Cara Pembelian</a></li>
+                        <li><a href="#contact">Hubungi Kami</a></li>
+                        <li><a href="#contact">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PERUSAHAAN</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#about">Blog</a></li>
+                        <li><a href="#contact">Karir</a></li>
+                        <li><a href="#contact">Partnership</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LAPTOP STORE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeLogin">&times;</span>
+            <h2>Sign In</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeRegister">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-submit">Daftar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
